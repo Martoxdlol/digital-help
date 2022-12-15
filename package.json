@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx vite --host 0.0.0.0",
     "build": "npx vite build",
-    "preview": "npx vite preview"
+    "preview": "npx vite preview",
+    "deploy": "npm run build && npx firebase deploy"
   },
   "devDependencies": {
     "firebase-tools": "^11.18.0",
