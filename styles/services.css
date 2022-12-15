@@ -1,0 +1,51 @@
+.services {
+    margin-bottom: 30px;
+}
+
+.services > div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    margin-bottom: 12px;
+    border-top: 1px solid #ddd;
+    padding-top: 18px;
+    grid-template-areas: "image content"
+}
+
+.services img {
+    display: block;
+    width: 100%;
+    grid-area: image;
+}
+
+@media (max-width: 600px) {
+    .services > div {
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        padding-top: 36px;
+        grid-template-areas: "content image"
+    }
+
+    .services img {
+        width: 110px;
+        margin-left: -50px;
+        margin-top: -26px;
+    }
+
+    .services ul {
+        padding-left: 20px;
+    }
+}
+
+.services h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: -70px;
+    padding-top: 70px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.services > div > div{
+     grid-area: content;
+}
