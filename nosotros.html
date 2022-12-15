@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Nosotros</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Mantiene el estado de si el menú está abierto o cerrado -->
+            <!-- El estado se levanta desde css -->
+            <input type="checkbox" id="menu" style="display: none">
+            <ul>
+                <li><a href="./">Inicio</a></li>
+                <li><a href="nosotros.html" class="current">Sobre nosotros</a></li>
+                <li><a>Servicios</a></li>
+                <li><a>Contacto</a></li>
+            </ul>
+            <!-- Abre o cierra el menú modificando el estado del checkbox -->
+            <label for="menu" class="trigger hide-on-desktop">
+                <svg version="1.1" baseProfile="full" width="40" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="12%" fill="#000" />
+                    <rect width="100%" height="12%" y="44%" fill="#000" />
+                    <rect width="100%" height="12%" y="88%" fill="#000" />
+                </svg>
+            </label>
+        </nav>
+    </header>
+    <main class="subpage container">
+        <h1>Sobre nosotros</h1>
+        
+    </main>
+</body>
+
+</html>
