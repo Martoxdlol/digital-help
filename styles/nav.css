@@ -4,7 +4,8 @@ header nav {
     width: 100%;
     box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.2);
     padding: 6px 0;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
+    background-color: white;
     min-height: var(--mobile-nav-height);
 }
 
@@ -38,7 +39,7 @@ header nav .trigger {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     header nav input[type=checkbox]:not(:checked) + ul {
         display: none;
     }
@@ -47,4 +48,17 @@ header nav .trigger {
         margin-top: 40px;
         display: block;
     }
+}
+
+
+.logo {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    height: 100%;
+    display: block;
+}
+
+.logo img {
+    height: 100%;
 }
