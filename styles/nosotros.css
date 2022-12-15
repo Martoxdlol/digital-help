@@ -1,0 +1,55 @@
+.person {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.leo {
+    grid-template-columns: 2fr 4fr;
+}
+
+.person img {
+    width: 100%;
+}
+
+.person h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .person {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 901px) {
+    .person {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .leo {
+        grid-template-columns: 2fr 6fr;
+    }
+    
+}
+
+.person h2 {
+    margin-top: -85px;
+}
+
+.person > div {
+    padding: 20px;
+}
+
+.person ul {
+    padding-left: 20px;
+}
+
+.person ul li {
+    padding: 4px 0;
+}
