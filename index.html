@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <title>Digital Help 2023 - soluciones tecnológicas, mantenimiento y reparación</title>
+  <meta name="description" content="Digital Help es un emprendimiento que se ocupa de asistir a las instituciones educativas en toda el área de
+  tecnología. Reparación, actualización, mantenimiento de equipos informáticos y demás dispositivos tecnológicos">
+  <meta property="og:title" content="Digital help" />
+  <meta property="og:description"
+    content="Asistencia a instituciones educativas. Soluciones tecnológicas, mantenimiento y reparación" />
+  <meta property="og:image" content="https://www.digitalhelp.com.ar/og-image.png" />
+  <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">
+        <img src="logo.webp" alt="Digital Help">
+      </a>
+      <!-- Mantiene el estado de si el menú está abierto o cerrado -->
+      <!-- El estado se levanta desde css -->
+      <input type="checkbox" id="menu" style="display: none">
+      <ul>
+        <li><a href="./" class="current">Inicio</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <!-- Abre o cierra el menú modificando el estado del checkbox -->
+      <label for="menu" class="trigger hide-on-desktop">
+        <svg version="1.1" baseProfile="full" width="40" height="22" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100%" height="12%" fill="#000" />
+          <rect width="100%" height="12%" y="44%" fill="#000" />
+          <rect width="100%" height="12%" y="88%" fill="#000" />
+        </svg>
+      </label>
+    </nav>
+    <div class="hero">
+      <div class="overlay">
+        <div class="container">
+          <div class="content">
+            <h1>Digital Help</h1>
+            <p>Soluciones escolares digitales. Soporte técnico on-site y remoto</p>
+            <div class="actions">
+              <a class="colored" href="servicios.html">Servicios</a>
+              <a href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section>
+      <h2 id="info">Asistimos a las instituciones educativas en toda el área tecnológica</h2>
+      <p>
+        Digital Help es un emprendimiento que se ocupa de asistir a las instituciones educativas en toda el área de
+        tecnología. Reparación, actualización, mantenimiento de equipos informáticos y demás dispositivos tecnológicos
+      </p>
+    </section>
+    <section>
+      <h2>Servicios</h2>
+      <p>
+        Digital Help se compromete a ofrecer soluciones creativas y escalables para todos. Todos nuestros clientes son
+        únicos y nuestros servicios son altamente personalizables. Obtenga información sobre nuestra oferta y
+        comuníquese con nosotros en caso de dudas o para programar una cita.
+      </p>
+      <div class="cards">
+        <a style="background-image: url('soporte-remoto.webp');" href="servicios.html#soporte-remoto">
+          <div class="overlay">
+            <h3>Soporte remoto</h3>
+          </div>
+        </a>
+        <a style="background-image: url('reparacion.webp');" href="servicios.html#reparacion">
+          <div class="overlay">
+            <h3>Reparación</h3>
+          </div>
+        </a>
+        <a style="background-image: url('software-educativo.webp');" href="servicios.html#software-educativo">
+          <div class="overlay">
+            <h3>Software educativo</h3>
+          </div>
+        </a>
+        <a style="background-image: url('conectividad.webp');" href="servicios.html#conectividad">
+          <div class="overlay">
+            <h3>Conectividad</h3>
+          </div>
+        </a>
+        <a style="background-image: url('robotica.webp');" href="servicios.html#robotica">
+          <div class="overlay">
+            <h3>Robótica</h3>
+          </div>
+        </a>
+        <a style="background-image: url('capacitacion.jpg');" href="servicios.html#capacitacion">
+          <div class="overlay">
+            <h3>Capacitación</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- This web page was created by Tomás Cichero (Martoxdlol - github.com/Martoxdlol) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VLS1YZ6XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2VLS1YZ6XQ');
+  </script>
+</body>
+
+</html>

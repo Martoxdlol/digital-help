@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <title>Nosotros</title>
+    <style>
+        img {
+            width: 95px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: white;">
+            <a href="/" class="logo">
+                <img src="logo.webp" alt="Digital Help">
+            </a>
+            <!-- Mantiene el estado de si el menú está abierto o cerrado -->
+            <!-- El estado se levanta desde css -->
+            <input type="checkbox" id="menu" style="display: none">
+            <ul>
+                <li><a href="./">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html" class="current">Contacto</a></li>
+            </ul>
+            <!-- Abre o cierra el menú modificando el estado del checkbox -->
+            <label for="menu" class="trigger hide-on-desktop">
+                <svg version="1.1" baseProfile="full" width="40" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="12%" fill="#000" />
+                    <rect width="100%" height="12%" y="44%" fill="#000" />
+                    <rect width="100%" height="12%" y="88%" fill="#000" />
+                </svg>
+            </label>
+        </nav>
+    </header>
+    <main class="subpage container">
+        <style>
+            main h2 {
+                font-size: 20px;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+            }
+
+            main a {
+                font-size: 20px;
+                color: rgb(5, 128, 228);
+                text-decoration: none;
+            }
+
+            main button {
+                padding: 4px 10px;
+                font-size: 16px;
+                border-radius: 6px;
+                background-color: transparent;
+                border: 1px solid #AAA;
+                color: #666;
+            }
+        </style>
+        <h1>Contacto</h1>
+        <button onclick="share()" type="button">Compartir</button>
+
+        <h2>Teléfono</h2>
+        <a href="tel:+5491162450814">11 6245-0814</a>
+
+        <h2>Correo electrónico</h2>
+        <a href="mailto:sebastian_cerezo@hotmail.com">sebastian_cerezo@hotmail.com</a>
+
+        <h2>Página web</h2>
+        <a href="https://www.digitalhelp.com.ar">www.digitalhelp.com.ar</a>
+    </main>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VLS1YZ6XQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2VLS1YZ6XQ');
+    </script>
+    <script>
+        function share() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Digital Help',
+                    text: "Digital Help - soluciones tecnológicas, mantenimiento y reparación. Software educativo, soporte técnico.",
+                    url: 'http://www.digitalhelp.com.ar/'
+                })
+                    .then(() => console.log('Successful share'))
+                    .catch(error => console.log('Error sharing:', error));
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <title>Nosotros</title>
+    <style>
+        img {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav style="background-color: white;">
+            <a href="/" class="logo">
+                <img src="logo.webp" alt="Digital Help">
+            </a>
+            <!-- Mantiene el estado de si el menú está abierto o cerrado -->
+            <!-- El estado se levanta desde css -->
+            <input type="checkbox" id="menu" style="display: none">
+            <ul>
+                <li><a href="./">Inicio</a></li>
+                <li><a href="nosotros.html" class="current">Sobre nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <!-- Abre o cierra el menú modificando el estado del checkbox -->
+            <label for="menu" class="trigger hide-on-desktop">
+                <svg version="1.1" baseProfile="full" width="40" height="22" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="12%" fill="#000" />
+                    <rect width="100%" height="12%" y="44%" fill="#000" />
+                    <rect width="100%" height="12%" y="88%" fill="#000" />
+                </svg>
+            </label>
+        </nav>
+    </header>
+    <main class="subpage container">
+        <h1>Sobre nosotros</h1>
+        <section>
+            <div class="person">
+                <img src="sebastian.jpg" alt="Arístides Sebastián Cerezo" />
+                <div>
+                    <h2>Arístides Sebastián Cerezo</h2>
+                    <ul>
+                        <li>Licenciado en Tecnología educativa UTN</li>
+                        <li>Profesor de Educación Primaria</li>
+                        <li>Administrador de Redes Windows</li>
+                        <li>Más de 20 Años trabajando en el área de tecnología educativa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="person leo">
+                <img src="leonel.webp" alt="Arístides Sebastián Cerezo" />
+                <div>
+                    <h2>Leonel López</h2>
+                    <ul>
+                        <li>Ingeniería Informática UTN (Cursando Tercer año)</li>
+                        <li>Técnico Electrónico UTN</li>
+                        <li>Capacitador Róbotica UTN</li>
+                        <li>Más de diez años trabajando, reparando y facilitando el acceso de la tecnología en
+                            instituciones educativas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VLS1YZ6XQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2VLS1YZ6XQ');
+    </script>
+</body>
+
+</html>
