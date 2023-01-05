@@ -1,6 +1,6 @@
 .hero {
     margin-top: var(--mobile-nav-height);
-    background-image: url("../hero.jpg");
+    background-image: url("../hero.webp");
     background-position: center center;
     background-size: cover;
 }
