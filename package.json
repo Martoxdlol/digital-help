@@ -1,16 +1,17 @@
 {
   "name": "digital-help",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "2.0.0-beta",
+  "private": true,
   "scripts": {
-    "dev": "npx vite --host 0.0.0.0",
-    "build": "npx vite build",
-    "preview": "npx vite preview",
-    "deploy": "npm run build && npx firebase deploy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
+  "dependencies": {
     "firebase-tools": "^11.18.0",
-    "vite": "^4.0.0"
+    "astro": "^1.9.0"
   }
 }

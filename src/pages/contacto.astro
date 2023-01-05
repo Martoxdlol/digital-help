@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contacto">
+    <main class="subpage container">
+        <style>
+            main h2 {
+                font-size: 20px;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+            }
+
+            main a {
+                font-size: 20px;
+                color: rgb(5, 128, 228);
+                text-decoration: none;
+            }
+
+            main button {
+                padding: 4px 10px;
+                font-size: 16px;
+                border-radius: 6px;
+                background-color: transparent;
+                border: 1px solid #aaa;
+                color: #666;
+            }
+        </style>
+        <h1>Contacto</h1>
+        <button onclick="share()" type="button">Compartir</button>
+
+        <h2>Teléfono</h2>
+        <a href="tel:+5491162450814">11 6245-0814</a>
+
+        <h2>Correo electrónico</h2>
+        <a href="mailto:sebastian_cerezo@hotmail.com"
+            >sebastian_cerezo@hotmail.com</a
+        >
+
+        <h2>Página web</h2>
+        <a href="https://www.digitalhelp.com.ar">www.digitalhelp.com.ar</a>
+    </main>
+</Layout>
