@@ -42,4 +42,18 @@ import Layout from "../layouts/Layout.astro";
         <h2>Página web</h2>
         <a href="https://www.digitalhelp.com.ar">www.digitalhelp.com.ar</a>
     </main>
+    <script type="text/javascript" is:inline>
+        function share() {
+            if (navigator.share) {
+                navigator
+                    .share({
+                        title: "Digital Help",
+                        text: "Digital Help - soluciones tecnológicas, mantenimiento y reparación. Software educativo, soporte técnico.",
+                        url: "http://www.digitalhelp.com.ar/",
+                    })
+                    .then(() => console.log("Successful share"))
+                    .catch((error) => console.log("Error sharing:", error));
+            }
+        }
+    </script>
 </Layout>
