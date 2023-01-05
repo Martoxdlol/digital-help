@@ -6,7 +6,7 @@ export interface Props {
 import MenuIcon from '../components/MenuIcon.astro'
 
 const options = [
-    {href: './', text: 'Inicio'},
+    {href: '/', text: 'Inicio'},
     {href: '/nosotros', text: 'Sobre nosotros'},
     {href: '/servicios', text: 'Servicios'},
     {href: '/contacto', text: 'Contacto'},
@@ -23,7 +23,7 @@ const path = Astro.url.pathname
     <!-- El estado se levanta desde css -->
     <input type="checkbox" id="menu" style="display: none" />
     <ul>
-        {options.map(({href, text}) => <li><a href={href} class={(path.endsWith(href) || href === './' && path === '/') ? 'current' : undefined}>{text}</a></li>)}
+        {options.map(({href, text}) => <li><a href={href} class={path.endsWith(href) ? 'current' : undefined}>{text}</a></li>)}
     </ul>
     <!-- Abre o cierra el menú modificando el estado del checkbox -->
     <label for="menu" class="trigger hide-on-desktop">
