@@ -1,16 +1,16 @@
-header .hero {
+.hero {
     margin-top: var(--mobile-nav-height);
     background-image: url("../hero.jpg");
     background-position: center center;
     background-size: cover;
 }
 
-header .overlay {
+.hero .overlay {
     padding: 160px 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-header .hero h1 {
+.hero h1 {
     font-size: 54px;
     color: white;
     margin: 0;
@@ -22,17 +22,17 @@ header .hero h1 {
     }
 }
 
-header .hero .content {
+.hero .content {
     max-width: 360px;
     color: #dfdfdf;
     font-size: 20px;
 }
 
-header .hero .actions {
+.hero .actions {
     display: flex;
 }
 
-header .hero .actions a {
+.hero .actions a {
     display: block;
     padding: 16px 30px;
     border-radius: 4px;
@@ -44,9 +44,7 @@ header .hero .actions a {
     text-decoration: none;
 }
 
-header .hero .actions a.colored {
+.hero .actions a.colored {
     background-color: #f7d9c4;
     color: black;
 }
-
-
