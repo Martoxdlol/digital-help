@@ -11,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.9.0",
-    "firebase-tools": "^11.18.0",
-    "astrojs-service-worker": "^0.0.8"
+    "astro": "^1.9.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^11.18.0"
   }
 }
